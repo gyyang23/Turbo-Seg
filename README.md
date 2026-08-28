@@ -2,7 +2,7 @@
 
 by [Guoyu Yang](https://github.com/gyyang23), Xiaojing Wei, and Daming Shi (Shenzhen University)
 
-## News
+## News🔥
 - Turbo-Seg is accepted by **IEEE Transactions on Multimedia (TMM)**.
 
 <p align="center">
@@ -17,8 +17,8 @@ Open-vocabulary semantic segmentation (OVSS) leverages vision-language models (V
 
 **Turbo-Seg** addresses these limitations with a fully convolutional design that combines:
 
-- A **convolution-based VLM encoder** (CLIP ConvNeXt), which better preserves spatial information and maintains linear complexity with respect to input size.
-- Two **cascaded Turbo Aggregation Decoders**, each rapidly refining category-specific masks through three synergistic aggregation mechanisms:
+- **A convolution-based VLM encoder** (CLIP ConvNeXt), which better preserves spatial information and maintains linear complexity with respect to input size.
+- **Two cascaded Turbo Aggregation Decoders**, each rapidly refining category-specific masks through three synergistic aggregation mechanisms:
   - **Spatial Aggregation (SA)**: captures local spatial context via depthwise separable convolution and MLP.
   - **Text-Driven Aggregation (TDA)**: incorporates text features into the mask.
   - **Vision-Driven Aggregation (VDA)**: integrates multi-level vision features for finer details.
