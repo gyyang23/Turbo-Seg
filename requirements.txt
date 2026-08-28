@@ -1,0 +1,18 @@
+scipy==1.15.3
+ftfy==6.3.1
+opencv-python==4.13.0.92
+setuptools==75.1.0
+pillow==10.4.0
+timm==1.0.25
+regex==2026.2.19
+einops==0.8.2
+numpy==2.2.6
+pycocotools==2.0.11
+fvcore==0.1.5.post20221221
+tensorboard==2.12.0
+protobuf==3.20.3
+
+# detectron2 is installed from local source in editable mode (version 0.6)
+# pip install -e detectron2/
+# open_clip is installed from local source in editable mode (version 2.10.1)
+# pip install -e open_clip/
