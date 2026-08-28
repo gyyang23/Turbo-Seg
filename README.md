@@ -6,7 +6,7 @@ by [Guoyu Yang](https://github.com/gyyang23), Xiaojing Wei, and Daming Shi (Shen
 - Turbo-Seg is accepted by **IEEE Transactions on Multimedia (TMM)**.
 
 <p align="center">
-  <img src="assets/Turbo-Seg Visualization Results.png" width="90%">
+  <img src="assets/Turbo-Seg Visualization Results.png" width="100%">
   <br>
   <em>Fig. 1. Segmentation results and inference speed of Turbo-Seg on smartphone-captured images, along with its performance-speed trade-off across the A-847, PC-459, A-150, and PAS-20 benchmarks.</em>
 </p>
@@ -18,15 +18,15 @@ Open-vocabulary semantic segmentation (OVSS) leverages vision-language models (V
 **Turbo-Seg** addresses these limitations with a fully convolutional design that combines:
 
 - A **convolution-based VLM encoder** (CLIP ConvNeXt), which better preserves spatial information and maintains linear complexity with respect to input size.
-- **Two cascaded Turbo Aggregation Decoders**, each rapidly refining category-specific masks through three synergistic aggregation mechanisms:
+- Two **cascaded Turbo Aggregation Decoders**, each rapidly refining category-specific masks through three synergistic aggregation mechanisms:
   - **Spatial Aggregation (SA)**: captures local spatial context via depthwise separable convolution and MLP.
   - **Text-Driven Aggregation (TDA)**: incorporates text features into the mask.
   - **Vision-Driven Aggregation (VDA)**: integrates multi-level vision features for finer details.
 
-By replacing the Transformer's attention with convolutional operations, Turbo-Seg achieves **linear complexity with respect to the number of categories**, without relying on performance-degrading acceleration mechanisms (e.g., SED's Category Early Rejection).
+By replacing the Transformer's attention with convolutional operations, Turbo-Seg achieves linear complexity with respect to the number of categories, without relying on performance-degrading acceleration mechanisms (e.g., SED's Category Early Rejection).
 
 <p align="center">
-  <img src="assets/Turbo-Seg Framework.png" width="90%">
+  <img src="assets/Turbo-Seg Framework.png" width="100%">
   <br>
   <em>Fig. 2. The overall framework of Turbo-Seg. A convolution-based VLM encoder (CLIP ConvNeXt) extracts vision and text features, and two cascaded Turbo Aggregation Decoders (each composed of SA, TDA, and VDA) progressively refine the category-specific masks.</em>
 </p>
