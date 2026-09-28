@@ -100,5 +100,11 @@ We would like to acknowledge the contributions of public projects, such as [CAT-
 
 ## Citing Turbo-Seg
 ```BibTeX
-awaiting publication
+@article{yang2026turbo,
+  title={Turbo-Seg: Fully Convolutional Open-Vocabulary Semantic Segmentation with Turbo Decoding},
+  author={Yang, Guoyu and Wei, Xiaojing and Shi, Daming},
+  journal={IEEE Transactions on Multimedia},
+  year={2026},
+  publisher={IEEE}
+}
 ```
